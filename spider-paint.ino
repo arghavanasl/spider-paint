@@ -32,6 +32,7 @@ void toggleServo(int currentState){
     }
   }
 }
+
 float returnsX(float A, float c, float L1, float L2)
 {
   float x = (L1*L1 - L2*L2 - A*A + A*c)/(c-A)/2;
