@@ -19,14 +19,20 @@ float c = 12.5; //box width (cm)
 float d = 4.5; 
 const float pi = 3.1415926535898;
 
-void toggleServo(int currentState){
-  if(currentState == WRITING){
-    for(int i = servoWritingPos; i >= servoPassingPos; i--){
+void toggleServo(int currentState)
+{
+  if(currentState == WRITING)
+  {
+    for(int i = servoWritingPos; i >= servoPassingPos; i--)
+    {
       servo1.write(i);
       delay(25);
     }
-  }else{
-    for(int i = servoPassingPos; i <= servoWritingPos; i++){
+  }
+  else
+  {
+    for(int i = servoPassingPos; i <= servoWritingPos; i++)
+    {
       servo1.write(i);
       delay(25);
     }
@@ -119,7 +125,6 @@ void setup()
   
   // 35 points
   //uint8_t route_array[array_size][2] = {{110,50},{109,50},{108,50},{107,50},{106,50},{105,50},{104,50},{103,50},{102,50},{101,50},{100,50},{99,50},{98,50},{97,50},{96,50},{95,50},{94,50},{93,50},{92,50},{91,50},{90,50},{89,50},{88,50},{87,50},{86,50},{85,50},{84,50},{83,50},{82,50},{81,50},{80,50},{79,50},{78,50},{77,50},{76,50}};
-
 
   //uint8_t route_array[array_size][3] = {{77,50,1},{78,50,1},{79,50,1},{80,50,1},{81,50,0},{82,50,0},{83,50,0},{84,50,0},{85,50,1},{86,50,1},{87,50,1},{88,50,1},{89,50,0},{89,50,0},{91,50,0},{92,50,0},{93,50,1},{94,50,1},{95,50,1},{96,50,1}};
 
