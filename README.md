@@ -1,5 +1,3 @@
-"Spider Paint" is a 2-degree-of-freedom (2-DoF) robot capable of creating one-color drawings or prints on a whiteboard using a marker.
-
 
 https://github.com/arghavanaslani/spider-paint/assets/100693526/f211880d-f7aa-48dd-a4fb-1c2349ebaa36
 
